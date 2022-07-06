@@ -1,0 +1,27 @@
+POST http://localhost:3000/aliens HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Kiran",
+  "tech": "Blockchain"
+}
+###
+
+GET http://localhost:3000/aliens 
+
+###
+
+GET http://localhost:3000/aliens/62c5ac8f55ed661c264b68aa
+
+###
+
+PATCH  http://localhost:3000/aliens/62c5af761b9fca1160119609
+content-type: application/json
+
+{
+  "sub": true
+}
+
+###
+
+DELETE http://localhost:3000/aliens/62c5adf155ed661c264b68bd
